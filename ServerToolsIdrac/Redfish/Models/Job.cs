@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
+﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ServerToolsIdrac.Redfish.Models
 {
@@ -23,7 +18,7 @@ namespace ServerToolsIdrac.Redfish.Models
             get => id;
             set
             {
-                if(value != id)
+                if (value != id)
                 {
                     id = value;
                     NotifyPropertyChanged("Id");
@@ -37,7 +32,7 @@ namespace ServerToolsIdrac.Redfish.Models
             get => name;
             set
             {
-                if(value != name)
+                if (value != name)
                 {
                     name = value;
                     NotifyPropertyChanged("Name");
@@ -51,7 +46,7 @@ namespace ServerToolsIdrac.Redfish.Models
             get => jobState;
             set
             {
-                if(value != jobState)
+                if (value != jobState)
                 {
                     jobState = value;
                     NotifyPropertyChanged("JobState");
@@ -65,7 +60,7 @@ namespace ServerToolsIdrac.Redfish.Models
             get => message;
             set
             {
-                if(value != message)
+                if (value != message)
                 {
                     message = value;
                     NotifyPropertyChanged("Message");
@@ -79,7 +74,7 @@ namespace ServerToolsIdrac.Redfish.Models
             get => percentComplete;
             set
             {
-                if(value != percentComplete)
+                if (value != percentComplete)
                 {
                     percentComplete = value;
                     NotifyPropertyChanged("PercentComplete");

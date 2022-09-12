@@ -1,10 +1,7 @@
 ﻿using HtmlAgilityPack;
 using RestSharp;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -13,7 +10,7 @@ namespace ServerToolsIdrac.Internet
     public class HpeInternet
     {
         private readonly IRestClient client;
-        
+
         public HpeInternet(string serialNumber)
         {
             client = new RestClient(string.Format("https://partsurfer.hpe.com/Search.aspx?searchText={0}", serialNumber));
@@ -33,9 +30,9 @@ namespace ServerToolsIdrac.Internet
 
             HtmlDocument document = new HtmlDocument();
             document.LoadHtml(response.Content);
-            string processorName = "Não encontrado";
+            string processorName = "Not found";
 
-            foreach(var element in document.DocumentNode.SelectNodes("//span"))
+            foreach (var element in document.DocumentNode.SelectNodes("//span"))
             {
                 if (element.InnerText.ToLower().Contains("ghz"))
                 {
@@ -47,7 +44,7 @@ namespace ServerToolsIdrac.Internet
             //Delay between requests
             await Task.Run(() =>
             {
-                Thread.Sleep(6000);
+                Thread.Sleep(3000);
             });
 
             return processorName;

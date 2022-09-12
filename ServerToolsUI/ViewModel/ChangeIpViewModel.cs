@@ -3,7 +3,6 @@ using ServerToolsIdrac.Network;
 using ServerToolsIdrac.Racadm.Actions;
 using ServerToolsIdrac.Racadm.Model;
 using ServerToolsIdrac.Redfish.Actions;
-using ServerToolsIdrac.Redfish.Models;
 using ServerToolsIdrac.Redfish.Util;
 using ServerToolsUI.Model;
 using ServerToolsUI.Util;
@@ -11,11 +10,7 @@ using ServerToolsUI.View;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
 using System.Net;
-using System.Net.NetworkInformation;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ServerToolsUI.ViewModel
 {
@@ -30,7 +25,7 @@ namespace ServerToolsUI.ViewModel
             public string NewGateway { get; set; }
         }
 
-        private const int JobRefreshTime = 5;
+        private const int JobRefreshTime = 3;
         public ChangeIpViewModel()
         {
             Jobs = new ObservableCollection<JobsDataGridInfo>();
@@ -53,7 +48,7 @@ namespace ServerToolsUI.ViewModel
             {
                 List<string> errors = new List<string>()
                 {
-                    "IP inválido"
+                    "invalid IP"
                 };
                 validationErrors["NetworkIp"] = errors;
             }
@@ -63,7 +58,7 @@ namespace ServerToolsUI.ViewModel
             {
                 List<string> errors = new List<string>()
                 {
-                    "Mascára inválida"
+                    "invalid mask"
                 };
                 validationErrors["NetworkMask"] = errors;
             }
@@ -82,7 +77,7 @@ namespace ServerToolsUI.ViewModel
             {
                 List<string> errors = new List<string>()
                 {
-                    "Adicione ao menos 1 Idrac"
+                    "Add at least 1 Idrac"
                 };
                 validationErrors["Idracs"] = errors;
             }
@@ -93,7 +88,7 @@ namespace ServerToolsUI.ViewModel
                 {
                     List<string> errors = new List<string>()
                     {
-                        "IP inválido"
+                        "invalid IP"
                     };
                     validationErrors["Idracs"] = errors;
                 }
@@ -101,7 +96,7 @@ namespace ServerToolsUI.ViewModel
                 {
                     List<string> errors = new List<string>()
                     {
-                        "Mascara inválida"
+                        "invalid mask"
                     };
                     validationErrors["Idracs"] = errors;
                 }
@@ -109,7 +104,7 @@ namespace ServerToolsUI.ViewModel
                 {
                     List<string> errors = new List<string>()
                     {
-                        "Gateway inválido"
+                        "invalid gateway"
                     };
                     validationErrors["Idracs"] = errors;
                 }

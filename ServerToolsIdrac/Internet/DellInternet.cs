@@ -1,9 +1,6 @@
 ﻿using RestSharp;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -26,16 +23,16 @@ namespace ServerToolsIdrac.Internet
             var response = await client.ExecuteTaskAsync(request);
 
             if (!response.IsSuccessful)
-                throw new Exception(string.Format("Fail to get Processor, error {0}", 
+                throw new Exception(string.Format("Fail to get Processor, error {0}",
                     response.ErrorMessage));
 
             var lines = response.Content.Split('\n');
-            string processor = "Não encontrado";
+            string processor = "Not found";
 
-            foreach(var line in lines)
+            foreach (var line in lines)
             {
                 if (line.ToLower().Contains("ghz") |
-                    line.ToLower().Contains("gold")|
+                    line.ToLower().Contains("gold") |
                     line.ToLower().Contains("xeon"))
                 {
                     processor = line.Substring(11);
@@ -47,9 +44,9 @@ namespace ServerToolsIdrac.Internet
             //Delay between requests
             await Task.Run(() =>
             {
-                Thread.Sleep(6000);
+                Thread.Sleep(3000);
             });
-            
+
             return processor;
         }
     }

@@ -5,7 +5,6 @@ using ServerToolsIdrac.Racadm.Actions;
 using ServerToolsIdrac.Racadm.Model;
 using ServerToolsIdrac.Redfish.Actions;
 using ServerToolsIdrac.Redfish.Enums;
-using ServerToolsIdrac.Redfish.Models;
 using ServerToolsIdrac.Redfish.Util;
 using ServerToolsUI.Model;
 using ServerToolsUI.Util;
@@ -14,11 +13,7 @@ using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
-using System.Linq;
 using System.Net;
-using System.Security.AccessControl;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ServerToolsUI.ViewModel
 {
@@ -80,7 +75,7 @@ namespace ServerToolsUI.ViewModel
             {
                 List<string> errors = new List<string>()
                 {
-                    "Informe um arquivo SCP"
+                    "Enter an SCP file"
                 };
                 validationErrors["FirmwarePath"] = errors;
             }
@@ -89,7 +84,7 @@ namespace ServerToolsUI.ViewModel
             {
                 List<string> errors = new List<string>()
                 {
-                    "Adicione ao menos um servidor para o Update"
+                    "Add at least one server for Update"
                 };
                 validationErrors["Idracs"] = errors;
             }
@@ -108,7 +103,7 @@ namespace ServerToolsUI.ViewModel
             {
                 List<string> errors = new List<string>()
                 {
-                    "Informe um arquivo SCP"
+                    "Enter an SCP file"
                 };
                 validationErrors["ScpFilePath"] = errors;
             }
@@ -117,7 +112,7 @@ namespace ServerToolsUI.ViewModel
             {
                 List<string> errors = new List<string>()
                 {
-                    "Adicione ao menos 1 servidor para o import"
+                    "Add at least 1 server for the import"
                 };
                 validationErrors["Idracs"] = errors;
             }
@@ -136,7 +131,7 @@ namespace ServerToolsUI.ViewModel
             {
                 List<string> errors = new List<string>()
                 {
-                    "Informe um Script"
+                    "Inform a Script"
                 };
                 validationErrors["ScriptFilePath"] = errors;
             }
@@ -145,7 +140,7 @@ namespace ServerToolsUI.ViewModel
             {
                 List<string> errors = new List<string>()
                 {
-                    "Adicione ao menos 1 servidor"
+                    "Add at least 1 server"
                 };
                 validationErrors["Idracs"] = errors;
             }
@@ -344,7 +339,7 @@ namespace ServerToolsUI.ViewModel
             get => hasJobs;
             set
             {
-                if(value != hasJobs)
+                if (value != hasJobs)
                 {
                     hasJobs = value;
                     NotifyPropertyChanged("HasJobs");
@@ -385,7 +380,7 @@ namespace ServerToolsUI.ViewModel
                 return;
 
             Searching = true;
-            
+
             try
             {
                 string currentIp = NetworkUtil.GetNetworkAddress(NetworkIp, NetworkMask);
@@ -468,7 +463,7 @@ namespace ServerToolsUI.ViewModel
 
             if (credentials == null)
                 return;
-           
+
             Monitor = new JobMonitor(credentials, JobRefreshTime);
             CancelToken = false;
 
@@ -534,7 +529,7 @@ namespace ServerToolsUI.ViewModel
 
         private void ClearJobs(object parameter)
         {
-            if(Monitor != null)
+            if (Monitor != null)
             {
                 Monitor.Jobs.Clear();
                 Monitor.Stop();
@@ -563,7 +558,7 @@ namespace ServerToolsUI.ViewModel
                 {
                     Idracs.Remove((JobsDataGridInfo)parameter);
                 }
-                catch { }                
+                catch { }
             }
         }
 

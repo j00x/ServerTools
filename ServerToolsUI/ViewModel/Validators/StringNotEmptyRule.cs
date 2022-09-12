@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Controls;
+﻿using System.Windows.Controls;
 
 namespace ServerToolsUI.ViewModel.Validators
 {
@@ -12,7 +7,7 @@ namespace ServerToolsUI.ViewModel.Validators
         public override ValidationResult Validate(object value, System.Globalization.CultureInfo cultureInfo)
         {
             if (string.IsNullOrEmpty(value.ToString()))
-                return new ValidationResult(false, "O campo não pode estar vazio");
+                return new ValidationResult(false, "The field cannot be empty");
 
             return new ValidationResult(true, null);
         }

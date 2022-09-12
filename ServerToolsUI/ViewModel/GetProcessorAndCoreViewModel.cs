@@ -1,5 +1,4 @@
 ﻿using MaterialDesignThemes.Wpf;
-using ServerToolsIdrac.Internet;
 using ServerToolsIdrac.Racadm.Actions;
 using ServerToolsIdrac.Racadm.Model;
 using ServerToolsUI.Model;
@@ -10,8 +9,6 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Net;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ServerToolsUI.ViewModel
 {
@@ -65,7 +62,7 @@ namespace ServerToolsUI.ViewModel
             get => selectedManufacturer;
             set
             {
-                if(value != selectedManufacturer)
+                if (value != selectedManufacturer)
                 {
                     selectedManufacturer = value;
                     NotifyPropertyChanged("SelectedManufacturer");
@@ -251,11 +248,11 @@ namespace ServerToolsUI.ViewModel
             var lines = sysInfo.Split('\n');
             bool cpuBlock = false;
 
-            foreach(var line in lines)
+            foreach (var line in lines)
             {
                 if (line.Contains("InstanceID: CPU.Socket"))
                     cpuBlock = true;
-                if(line.Contains("Model") && cpuBlock)
+                if (line.Contains("Model") && cpuBlock)
                 {
                     processorName = line.Split('=')[1].Trim();
                     break;
@@ -286,10 +283,10 @@ namespace ServerToolsUI.ViewModel
 
         private string GetHpProcessor(string sysInfo)
         {
-            string processorName = "Não encontrado";
+            string processorName = "Not found";
             var lines = sysInfo.Split('\n');
 
-            foreach(var line in lines)
+            foreach (var line in lines)
             {
                 if (line.Contains("name"))
                 {
@@ -302,7 +299,7 @@ namespace ServerToolsUI.ViewModel
 
         private string GetHpCoreNumber(string sysInfo)
         {
-            string coreNumber = "Não encontrado";
+            string coreNumber = "Not found";
             var lines = sysInfo.Split('\n');
 
             foreach (var line in lines)

@@ -7,7 +7,7 @@ using System.Windows.Threading;
 namespace ServerToolsUI
 {
     /// <summary>
-    /// Interação lógica para App.xaml
+    /// Logical interaction for App.xaml
     /// </summary>
     public partial class App : Application
     {

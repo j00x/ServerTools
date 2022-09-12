@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Visual Studio\ServerTools\ServerToolsUI\obj\Debug\
+C:\Users\adam.pratt.AVPCLAN\Source\Repos\j00x\ServerTools\ServerToolsUI\obj\Debug\
 ServerToolsUI
 none
 false
 DEBUG;TRACE
-D:\Visual Studio\ServerTools\ServerToolsUI\App.xaml
-15-996406333
+C:\Users\adam.pratt.AVPCLAN\Source\Repos\j00x\ServerTools\ServerToolsUI\App.xaml
+15-1565248715
 
-43-539568912
-18-1944638343
+431072198159
+18-324700105
 View\ChangeIpView.xaml;View\CredentialsView.xaml;View\CustomScriptView.xaml;View\FirmwareUpdateView.xaml;View\GetProcessorAndCoreView.xaml;View\GetProcessorInternetView.xaml;View\HomeView.xaml;View\MainView.xaml;View\ScpExportListView.xaml;View\ScpExportView.xaml;View\ScpImportView.xaml;View\SearchIdracView.xaml;View\ServersListView.xaml;View\SettingsView.xaml;View\UserMessageView.xaml;
 
-True
+False
 

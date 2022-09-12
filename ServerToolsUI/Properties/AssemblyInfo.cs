@@ -1,12 +1,10 @@
 ﻿using System.Reflection;
-using System.Resources;
-using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Windows;
 
-// As informações gerais sobre um assembly são controladas por
-// conjunto de atributos. Altere estes valores de atributo para modificar as informações
-// associada a um assembly.
+// General information about an assembly is controlled by
+// set of attributes. Change these attribute values to modify the information
+// associated with an assembly.
 [assembly: AssemblyTitle("ServerToolsUI")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
@@ -16,40 +14,40 @@ using System.Windows;
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
-// Definir ComVisible como false torna os tipos neste assembly invisíveis
-// para componentes COM. Caso precise acessar um tipo neste assembly de
-// COM, defina o atributo ComVisible como true nesse tipo.
+// Setting ComVisible to false makes types in this assembly invisible
+// for COM components. If you need to access a type in this assembly from
+// COM, set the ComVisible attribute to true on this type.
 [assembly: ComVisible(false)]
 
-//Para começar a compilar aplicativos localizáveis, configure
-//<UICulture>CultureYouAreCodingWith</UICulture> no seu arquivo .csproj
-//dentro de um <Grupo de Propriedade>.  Por exemplo, se você está usando o idioma inglês
-//nos seus arquivos de origem, configure o <UICulture> para en-US.  Em seguida, descomente
-//o atributo NeutralResourceLanguage abaixo.  Atualize o "en-US" na
-//linha abaixo para coincidir com a configuração do UICulture no arquivo do projeto.
+//To start compiling localizable applications, configure
+//<UICulture>CultureYouAreCodingWith</UICulture> in your .csproj file
+//within a <Property Group>. For example, if you are using the English language
+//in your source files, set <UICulture> to en-US. then uncomment
+//the NeutralResourceLanguage attribute below. Update "en-US" in
+//line below to match the UICulture configuration in the project file.
 
 //[assembly: NeutralResourcesLanguage("en-US", UltimateResourceFallbackLocation.Satellite)]
 
 
 [assembly: ThemeInfo(
-    ResourceDictionaryLocation.None, //onde os dicionários de recursos de temas específicos estão localizados
-                                     //(usado se algum recurso não for encontrado na página,
-                                     // ou dicionários de recursos do aplicativo)
-    ResourceDictionaryLocation.SourceAssembly //onde o dicionário de recursos genéricos está localizado
-                                              //(usado se algum recurso não for encontrado na página,
-                                              // app, ou qualquer outro dicionário de recursos de tema específico)
+    ResourceDictionaryLocation.None, //where theme-specific resource dictionaries are located
+                                     //(used if some resource is not found on the page,
+                                     // or application resource dictionaries)
+    ResourceDictionaryLocation.SourceAssembly //where the generic resource dictionary is located
+                                              //(used if some resource is not found on the page,
+                                              // app, or any other theme-specific resource dictionary)
 )]
 
 
-// As informações da versão de um assembly consistem nos quatro valores a seguir:
+// An assembly's version information consists of the following four values:
 //
-//      Versão Principal
-//      Versão Secundária 
-//      Número da Versão
-//      Revisão
+// Major Version
+// Secondary Version
+// Version Number
+//      Revision
 //
-// É possível especificar todos os valores ou usar como padrão os Números de Build e da Revisão
-// usando o "*" como mostrado abaixo:
+// You can specify all values ​​or default to Build and Revision Numbers
+// using the "*" as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
 [assembly: AssemblyVersion("1.0.0.0")]
 [assembly: AssemblyFileVersion("1.0.0.0")]

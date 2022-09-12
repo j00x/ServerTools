@@ -1,28 +1,33 @@
-﻿namespace ServerToolsUI.Properties {
-    
-    
-    // Esta classe permite que você trate eventos específicos na classe de configurações:
-    //  O evento SettingChanging é gerado antes da alteração de um valor de configuração.
-    //  O evento PropertyChanged é gerado depois da alteração de um valor de configuração.
-    //  O evento SettingsLoaded é gerado depois do carregamento dos valores de configuração.
-    //  O evento SettingsSaving é gerado antes de salvar os valores de configuração.
-    internal sealed partial class Settings {
-        
-        public Settings() {
-            // // Para adicionar manipuladores de eventos para salvar e alterar configurações, remova os comentários das linhas abaixo:
+﻿namespace ServerToolsUI.Properties
+{
+
+
+    // This class allows you to handle specific events in the settings class:
+    // The Setting Changing event is raised before changing a setting value.
+    // The Property Changed event is raised after a configuration value has been changed.
+    // The Settings Loaded event is raised after loading configuration values.
+    // The Settings Saving event is raised before saving configuration values.
+    internal sealed partial class Settings
+    {
+
+        public Settings()
+        {
+            // // To add event handlers for saving and changing settings, uncomment the lines below:
             //
             // this.SettingChanging += this.SettingChangingEventHandler;
             //
             // this.SettingsSaving += this.SettingsSavingEventHandler;
             //
         }
-        
-        private void SettingChangingEventHandler(object sender, System.Configuration.SettingChangingEventArgs e) {
-            // Adicione código para manipular o evento SettingChangingEvent aqui.
+
+        private void SettingChangingEventHandler(object sender, System.Configuration.SettingChangingEventArgs e)
+        {
+            // Add code to handle the Setting Changing Event here.
         }
-        
-        private void SettingsSavingEventHandler(object sender, System.ComponentModel.CancelEventArgs e) {
-            // Adicione código para manipular o evento SettingsSaving aqui.
+
+        private void SettingsSavingEventHandler(object sender, System.ComponentModel.CancelEventArgs e)
+        {
+            // Add code to handle the Settings Saving event here.
         }
     }
 }

@@ -1,13 +1,11 @@
 ﻿using ServerToolsIdrac.Redfish.Actions;
 using ServerToolsIdrac.Redfish.Models;
 using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Linq;
 using System.Net;
 using System.Runtime.CompilerServices;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Threading;
 
@@ -27,7 +25,7 @@ namespace ServerToolsUI.Model
         }
 
         private readonly DispatcherTimer timer;
-        
+
         private readonly NetworkCredential credentials;
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -43,7 +41,7 @@ namespace ServerToolsUI.Model
             get => jobs;
             set
             {
-                if(value != jobs)
+                if (value != jobs)
                 {
                     jobs = value;
                     NotifyPropertyChanged("Jobs");
@@ -57,7 +55,7 @@ namespace ServerToolsUI.Model
             get => isRunning;
             set
             {
-                if(value != isRunning)
+                if (value != isRunning)
                 {
                     isRunning = value;
                     NotifyPropertyChanged("IsRunning");
@@ -143,7 +141,7 @@ namespace ServerToolsUI.Model
                         job.JobPercentComplete = idracJob.PercentComplete;
                         job.JobStatus = idracJob.JobState;
                     }
-                    catch(Exception ex)
+                    catch (Exception ex)
                     {
                         job.JobMessage = ex.Message;
                     }

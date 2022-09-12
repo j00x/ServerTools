@@ -1,15 +1,11 @@
-﻿using Newtonsoft.Json;
-using Newtonsoft.Json.Linq;
-using RestSharp;
+﻿using RestSharp;
 using RestSharp.Authenticators;
 using ServerToolsIdrac.Redfish.Models;
 using ServerToolsIdrac.Redfish.Util;
 using System;
-using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace ServerToolsIdrac.Redfish.Actions
@@ -55,7 +51,7 @@ namespace ServerToolsIdrac.Redfish.Actions
                 throw new Exception(string.Format("Server {0} unreachable", host));
 
             string jobUri = await CreateExportJobAsync(target, exportUse);
-            return await GetFileContentAsync(jobUri);   
+            return await GetFileContentAsync(jobUri);
         }
 
         /// <summary>
@@ -90,7 +86,7 @@ namespace ServerToolsIdrac.Redfish.Actions
             var response = await client.ExecuteTaskAsync(request);
 
             if (!response.IsSuccessful)
-                throw new RedfishException(string.Format("Fail to import the file, Error Code {0}", 
+                throw new RedfishException(string.Format("Fail to import the file, Error Code {0}",
                     response.StatusCode));
 
             return response.Headers
@@ -175,7 +171,7 @@ namespace ServerToolsIdrac.Redfish.Actions
             if (!response.IsSuccessful)
                 throw new RedfishException(string.Format("Fail to create Export Job, Error Code {0}",
                     response.StatusCode));
-            
+
             return response.Headers
                 .Where(x => x.Name == "Location")
                 .Select(x => x.Value)
