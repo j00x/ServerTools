@@ -108,7 +108,7 @@
         </GroupBox>
         <GroupBox Style="{DynamicResource MaterialDesignCardGroupBox}" 
                   Grid.Row="1"
-                  Header="Adicionar Servidores" 
+                  Header="Add Servers" 
                   Margin="15">
             <Grid>
                 <Grid.RowDefinitions>
@@ -200,7 +200,7 @@
                 Grid.Row="3"
                 VerticalAlignment="Bottom"
                 Command="{Binding ExportFileCommand}"
-                materialDesign:HintAssist.Hint="Iniciar Import">
+                materialDesign:HintAssist.Hint="Start Amount">
             Export
         </Button>
         <materialDesign:Card

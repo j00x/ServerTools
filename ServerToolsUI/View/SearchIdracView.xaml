@@ -230,7 +230,7 @@
                         Command="{Binding ImportScpFileCommand}"
                         Grid.Row="3"
                         Grid.ColumnSpan="2"
-                        materialDesign:HintAssist.Hint="Procurar Idracs">
+                        materialDesign:HintAssist.Hint="Search for idracs">
                         Import
                     </Button>
                 </Grid>
@@ -339,7 +339,7 @@
                         Command="{Binding RunScriptCommand}"
                         Grid.Row="2"
                         Grid.ColumnSpan="2"
-                        materialDesign:HintAssist.Hint="Procurar Idracs">
+                        materialDesign:HintAssist.Hint="Search for idracs">
                         Run Script
                     </Button>
                 </Grid>

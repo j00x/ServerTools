@@ -67,10 +67,10 @@ namespace ServerToolsUI.Model
         {
             Jobs.Add(new JobsDataGridInfo()
             {
-                SerialNumber = "Unknow",
-                JobId = "Unknow",
-                JobName = "Unknow",
-                JobMessage = "Unknow",
+                SerialNumber = "Unknown",
+                JobId = "Unknown",
+                JobName = "Unknown",
+                JobMessage = "Unknown",
                 JobPercentComplete = 0,
                 JobStatus = "Unknown",
                 Server = server,
@@ -121,13 +121,13 @@ namespace ServerToolsUI.Model
                         if (job.JobStatus.Contains("Failed") || job.JobStatus.Contains("Completed"))
                             continue;
 
-                        if (job.SerialNumber.Equals("Unknow"))
+                        if (job.SerialNumber.Equals("Unknown"))
                         {
                             ChassisAction chassisAction = new ChassisAction(job.Server, credentials);
                             job.SerialNumber = await chassisAction.GetServiceTagAsync();
                         }
 
-                        if (job.JobId.Equals("Unknow"))
+                        if (job.JobId.Equals("Unknown"))
                         {
                             TaskAction taskAction = new TaskAction(job.Server, credentials);
                             job.JobId = await taskAction.GetTaskIdAsync(job.JobUri);

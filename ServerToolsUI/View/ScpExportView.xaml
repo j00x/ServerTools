@@ -102,7 +102,7 @@
                 </ComboBox>
             </Grid>
         </GroupBox>
-        <Button ToolTip="Iniciar Export"
+        <Button ToolTip="Start Export"
                 materialDesign:HintAssist.Hint="Begin Export"
                 Grid.Row="2"
                 Margin="15"
@@ -117,7 +117,7 @@
                              Visibility="{Binding Path=NoExportCardVisible, Converter={StaticResource BoolToVis}}">
             <TextBlock
                 Margin="15">
-                Nenhum Export em execução
+                No Export running
             </TextBlock>
         </materialDesign:Card>
         <materialDesign:Card Grid.Row="1"

@@ -1,0 +1,16 @@
+C:\Users\adam.pratt.AVPCLAN\source\repos\j00x\ServerTools\ServerToolsIdrac\bin\Release\ServerToolsIdrac.dll
+C:\Users\adam.pratt.AVPCLAN\source\repos\j00x\ServerTools\ServerToolsIdrac\bin\Release\ServerToolsIdrac.pdb
+C:\Users\adam.pratt.AVPCLAN\source\repos\j00x\ServerTools\ServerToolsIdrac\bin\Release\HtmlAgilityPack.dll
+C:\Users\adam.pratt.AVPCLAN\source\repos\j00x\ServerTools\ServerToolsIdrac\bin\Release\Newtonsoft.Json.dll
+C:\Users\adam.pratt.AVPCLAN\source\repos\j00x\ServerTools\ServerToolsIdrac\bin\Release\Renci.SshNet.dll
+C:\Users\adam.pratt.AVPCLAN\source\repos\j00x\ServerTools\ServerToolsIdrac\bin\Release\RestSharp.dll
+C:\Users\adam.pratt.AVPCLAN\source\repos\j00x\ServerTools\ServerToolsIdrac\bin\Release\HtmlAgilityPack.pdb
+C:\Users\adam.pratt.AVPCLAN\source\repos\j00x\ServerTools\ServerToolsIdrac\bin\Release\HtmlAgilityPack.xml
+C:\Users\adam.pratt.AVPCLAN\source\repos\j00x\ServerTools\ServerToolsIdrac\bin\Release\Newtonsoft.Json.xml
+C:\Users\adam.pratt.AVPCLAN\source\repos\j00x\ServerTools\ServerToolsIdrac\bin\Release\Renci.SshNet.xml
+C:\Users\adam.pratt.AVPCLAN\source\repos\j00x\ServerTools\ServerToolsIdrac\bin\Release\RestSharp.xml
+C:\Users\adam.pratt.AVPCLAN\source\repos\j00x\ServerTools\ServerToolsIdrac\obj\Release\ServerToolsIdrac.csproj.AssemblyReference.cache
+C:\Users\adam.pratt.AVPCLAN\source\repos\j00x\ServerTools\ServerToolsIdrac\obj\Release\ServerToolsIdrac.csproj.CoreCompileInputs.cache
+C:\Users\adam.pratt.AVPCLAN\source\repos\j00x\ServerTools\ServerToolsIdrac\obj\Release\ServerToolsIdrac.csproj.CopyComplete
+C:\Users\adam.pratt.AVPCLAN\source\repos\j00x\ServerTools\ServerToolsIdrac\obj\Release\ServerToolsIdrac.dll
+C:\Users\adam.pratt.AVPCLAN\source\repos\j00x\ServerTools\ServerToolsIdrac\obj\Release\ServerToolsIdrac.pdb

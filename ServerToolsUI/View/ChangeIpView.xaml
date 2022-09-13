@@ -133,7 +133,7 @@
                    Grid.Row="2"
                     VerticalAlignment="Bottom"
                     HorizontalAlignment="Left"
-                   materialDesign:HintAssist.Hint="Procurar Idracs">
+                   materialDesign:HintAssist.Hint="To search for Idracs">
                     Change IP
                 </Button>
             </StackPanel>

@@ -25,7 +25,7 @@ namespace ServerToolsUI.ViewModel
             public string NewGateway { get; set; }
         }
 
-        private const int JobRefreshTime = 3;
+        private const int JobRefreshTime = 1;
         public ChangeIpViewModel()
         {
             Jobs = new ObservableCollection<JobsDataGridInfo>();
