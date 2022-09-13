@@ -1,9 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
+﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace ServerToolsUI.Model
@@ -22,7 +18,7 @@ namespace ServerToolsUI.Model
             get => server;
             set
             {
-                if(value != server)
+                if (value != server)
                 {
                     server = value;
                     NotifyPropertyChanged("Server");
@@ -36,7 +32,7 @@ namespace ServerToolsUI.Model
             get => scriptTask;
             set
             {
-                if(value != scriptTask)
+                if (value != scriptTask)
                 {
                     scriptTask = value;
                     NotifyPropertyChanged("ScriptTask");
