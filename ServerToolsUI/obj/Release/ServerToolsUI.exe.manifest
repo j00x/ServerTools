@@ -114,14 +114,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ServerToolsIdrac.dll" size="39936">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ServerToolsIdrac.dll" size="180736">
       <assemblyIdentity name="ServerToolsIdrac" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ZJFBxQJWLs782Gltn7vMeUttPulz7aCwTX0ip5KuC1w=</dsig:DigestValue>
+        <dsig:DigestValue>76qy3kAV3hiNWVjdnRcDyJU7dks0o8HOSRuvndZGErU=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -133,7 +133,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>1VYil1TV6lBkOK/h9RIt/T/kZ/ub1sXvU4vlP/BW2uw=</dsig:DigestValue>
+        <dsig:DigestValue>3eUDrQ8/n8Mc54nQaokRMulbelb4uX8NUil4EkcZZUs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
