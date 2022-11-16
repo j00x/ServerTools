@@ -39,8 +39,8 @@
                                                  HorizontalAlignment="Center"/>
                     </Button>
                     <TextBlock Margin="5"
-                               Style="{DynamicResource MaterialDesignBody1TextBlock}">
-                        Firmware Update
+                               Style="{DynamicResource MaterialDesignBody1TextBlock}" FontWeight="Bold">
+                        Dell iDrac Firmware Update
                     </TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Vertical"
@@ -57,8 +57,8 @@
                                                  HorizontalAlignment="Center"/>
                     </Button>
                     <TextBlock Margin="5"
-                               Style="{DynamicResource MaterialDesignBody1TextBlock}">
-                        Export SCP File
+                               Style="{DynamicResource MaterialDesignBody1TextBlock}" FontWeight="Bold">
+                        Export iDrac SCP File
                     </TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Vertical"
@@ -75,8 +75,8 @@
                                                  HorizontalAlignment="Center"/>
                     </Button>
                     <TextBlock Margin="5"
-                               Style="{DynamicResource MaterialDesignBody1TextBlock}">
-                        Export List SCP File
+                               Style="{DynamicResource MaterialDesignBody1TextBlock}" FontWeight="Bold">
+                        Export iDrac SCP File
                     </TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Vertical"
@@ -93,8 +93,8 @@
                                                  HorizontalAlignment="Center"/>
                     </Button>
                     <TextBlock Margin="5"
-                               Style="{DynamicResource MaterialDesignBody1TextBlock}">
-                        Import SCP File
+                               Style="{DynamicResource MaterialDesignBody1TextBlock}" FontWeight="Bold">
+                        Import iDrac SCP File
                     </TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Vertical"
@@ -111,8 +111,8 @@
                                                  HorizontalAlignment="Center"/>
                     </Button>
                     <TextBlock Margin="5"
-                               Style="{DynamicResource MaterialDesignBody1TextBlock}">
-                        DHCP Deploy
+                               Style="{DynamicResource MaterialDesignBody1TextBlock}" FontWeight="Bold">
+                        iDrac Mass Update Deploy
                     </TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Vertical"
@@ -129,14 +129,14 @@
                                                  HorizontalAlignment="Center"/>
                     </Button>
                     <TextBlock Margin="5"
-                               Style="{DynamicResource MaterialDesignBody1TextBlock}">
-                        Change Idrac IP
+                               Style="{DynamicResource MaterialDesignBody1TextBlock}" FontWeight="Bold">
+                        Manage iDrac IP
                     </TextBlock>
                 </StackPanel>
             </WrapPanel>
         </GroupBox>
-        <GroupBox Grid.Row="1" Margin="15" Header="SSH Functions">
-            <WrapPanel Margin="15">
+        <GroupBox Grid.Row="1" Margin="15" Header="Remote SSH Commands">
+            <WrapPanel Margin="15" HorizontalAlignment="Center">
                 <StackPanel Orientation="Vertical"
                             Margin="5">
                     <Button Style="{DynamicResource MaterialDesignFlatButton}" 
@@ -152,8 +152,8 @@
 
                     </Button>
                     <TextBlock Margin="5"
-                               Style="{DynamicResource MaterialDesignBody1TextBlock}">
-                        Custom Script
+                               Style="{DynamicResource MaterialDesignBody1TextBlock}" FontWeight="Bold">
+                        Custom RACADM or Redfish Script
                     </TextBlock>
                 </StackPanel>
                 <StackPanel Orientation="Vertical"
@@ -161,19 +161,9 @@
                     <Button Style="{DynamicResource MaterialDesignFlatButton}" 
                             Height="auto" 
                             Width="auto"
-                            Command="{Binding GetProcessorAndCoreCommand}">
-                        <materialDesign:PackIcon Kind="Console"
-                                                 Width="50"
-                                                 Height="50"
-                                                 Margin="5"
-                                                 VerticalAlignment="Center"
-                                                 HorizontalAlignment="Center"/>
-
-                    </Button>
+                            Command="{Binding GetProcessorAndCoreCommand}"/>
                     <TextBlock Margin="5"
-                               Style="{DynamicResource MaterialDesignBody1TextBlock}">
-                        Processor e Core Count SSH
-                    </TextBlock>
+                               Style="{DynamicResource MaterialDesignBody1TextBlock}" Text="" IsEnabled="False"/>
                 </StackPanel>
                 <StackPanel Orientation="Vertical"
                             Margin="5">
@@ -190,8 +180,8 @@
 
                     </Button>
                     <TextBlock Margin="5"
-                               Style="{DynamicResource MaterialDesignBody1TextBlock}">
-                        Processor Internet
+                               Style="{DynamicResource MaterialDesignBody1TextBlock}" FontWeight="Bold">
+                        Support Service Tag lookup
                     </TextBlock>
                 </StackPanel>
             </WrapPanel>

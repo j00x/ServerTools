@@ -48,7 +48,7 @@
             <TextBlock HorizontalAlignment="Left" 
                        FontSize="28" Margin="15" 
                        Style="{DynamicResource MaterialDesignTitleTextBlock}">
-                Modelo Processador
+                Processor Model
             </TextBlock>
         </StackPanel>
 
